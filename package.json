@@ -26,6 +26,7 @@
     "hono": "^3.1.2"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.114",
     "@types/node": "^18.15.8",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2"
