@@ -1,7 +1,7 @@
-// hai app and routing code
+import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
 
-const handleRequest = (request?) => {
-    console.log("hogehoge")
+const handleRequest = (request: APIGatewayProxyEvent): APIGatewayProxyResult => {
+    return {"statusCode": 200, "body": "Hello World"}
 }
 
 export { handleRequest }
