@@ -1,7 +1,9 @@
-import { APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda';
+import { Hono } from 'hono'
+import { handle } from './aws'
 
-const handleRequest = (request: APIGatewayProxyEvent): APIGatewayProxyResult => {
-    return {"statusCode": 200, "body": "Hello World"}
-}
+const app = new Hono()
 
-export { handleRequest }
+app.get('/', (c) => c.text('Hello!'))
+
+
+export default handle(app)
