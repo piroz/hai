@@ -29,7 +29,7 @@
     "hono": "^3.2.5"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.115",
+    "@types/aws-lambda": "^8.10.119",
     "@types/node": "^20.3.0",
     "aws-cdk": "^2.83.1",
     "aws-cdk-lib": "^2.83.1",
