@@ -1,2 +1,5 @@
 // entry point for the application
-export * from "./app"
+
+import lambdaHandler from "./app"
+
+export const handler = lambdaHandler
