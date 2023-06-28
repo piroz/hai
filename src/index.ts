@@ -2,4 +2,4 @@
 
 import lambdaHandler from "./app"
 
-export default lambdaHandler
+export const handler = lambdaHandler
