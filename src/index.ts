@@ -3,7 +3,8 @@ import { handle } from 'hono/aws-lambda'
 
 import App from './app'
 
-new App()
+const _ = new App()
+console.debug(_)
 
 import { app } from "./decorators"
 
