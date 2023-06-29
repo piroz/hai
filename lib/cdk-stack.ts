@@ -16,7 +16,7 @@ export class CdkStack extends cdk.Stack {
     fn.addFunctionUrl({
       authType: lambda.FunctionUrlAuthType.NONE,
     })
-    new apigw.LambdaRestApi(this, 'myapi', {
+    const api = new apigw.LambdaRestApi(this, 'myapi', {
       handler: fn,
     })
   }
