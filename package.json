@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Javascript Serverless Microframework for AWS, inspired by aws chalice.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "webpack",
     "start": "ts-node src/index.ts",

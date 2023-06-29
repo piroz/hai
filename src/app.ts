@@ -1,9 +1,9 @@
-import { Hono } from 'hono'
+import { Get } from "./decorators"
+import { Context } from "hono"
 
-import { handle } from 'hono/aws-lambda'
-
-const app = new Hono()
-
-app.get('/', (c) => c.text('Hello Lambda!'))
-
-export default handle(app)
+export default class App {
+    @Get("/")
+    index(c: Context) {
+        return c.body('Thank you for coming')
+    }
+}
