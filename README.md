@@ -16,5 +16,14 @@ In a separate terminal, you can then locally invoke the function using cURL
 
 ```bash
 $ curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" \
--d '{"payload":"hello world!", "requestContext":{"domainName":"hono"}, "headers":[], "httpMethod":"GET", "url": "/"}'
+-d '{"payload":"hello world!", "requestContext":{"domainName":"localhost"}, "headers":[], "httpMethod":"GET", "path": "/n"}'
 ```
+
+## Useful commands (cdk)
+
+* `npm run build`   compile typescript to js
+* `npm run watch`   watch for changes and compile
+* `npm run test`    perform the jest unit tests
+* `cdk deploy`      deploy this stack to your default AWS account/region
+* `cdk diff`        compare deployed stack with current state
+* `cdk synth`       emits the synthesized CloudFormation template
