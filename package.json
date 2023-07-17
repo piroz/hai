@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/piroz/hai#readme",
   "dependencies": {
-    "hono": "^3.2.6"
+    "hono": "^3.3.1"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.119",
